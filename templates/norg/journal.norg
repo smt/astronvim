@@ -1,0 +1,15 @@
+@document.meta
+title: {TITLE}
+description:
+authors: {AUTHOR}
+categories:
+created: {TODAY}
+updated: {TODAY}
+version: 1.1.1
+@end
+
+* {TITLE_INPUT}
+  {{:{YESTERDAY}:}}[Yesterday] - {{:{TOMORROW}:}}[Tomorrow]
+
+** Daily Review
+   - {CURSOR}

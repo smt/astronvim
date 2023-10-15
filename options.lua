@@ -2,10 +2,13 @@
 return {
   opt = {
     -- set to true or false etc.
+    conceallevel = 3, -- sets vim.opt.conceallevel
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    undodir = os.getenv "HOME" .. "/.vim/undodir", -- sets vim.opt.undodir
+    undofile = true, -- sets vim.opt.undofile
     wrap = false, -- sets vim.opt.wrap
   },
   g = {
