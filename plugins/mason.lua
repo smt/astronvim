@@ -1,23 +1,5 @@
 -- customize mason plugins
 return {
-  -- null-ls is no longer maintained, so this will probably be deprecated/removed at some point
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    opts = function(_, config)
-      -- config variable is the default configuration table for the setup function call
-      local null_ls = require "null-ls"
-
-      -- Check supported formatters and linters
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-      config.sources = {
-        -- Set a formatter
-        -- null_ls.builtins.formatting.stylua,
-        -- null_ls.builtins.formatting.prettierd,
-      }
-      return config -- return final config table
-    end,
-  },
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
